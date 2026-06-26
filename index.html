@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>非自杀性自伤的临床诊治 | Web Brief</title>
+    <meta
+      name="description"
+      content="基于非自杀性自伤临床诊治文档设计的动态网页演示，涵盖定义、鉴别、流行病学、机制、评估与治疗。"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="cursor-glow" aria-hidden="true"></div>
+    <canvas class="particle-field" aria-hidden="true"></canvas>
+    <div class="scroll-meter" aria-hidden="true"><span></span></div>
+
+    <header class="site-header" data-reveal>
+      <a class="brand" href="#top" aria-label="回到首页">
+        <span>NSSI</span>
+        <small>保定市第一中心医院</small>
+      </a>
+      <nav class="nav-links" aria-label="页面导航">
+        <a href="#definition">定义</a>
+        <a href="#mechanism">机制</a>
+        <a href="#assessment">评估</a>
+        <a href="#treatment">治疗</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero section-shell" aria-labelledby="hero-title">
+        <div class="hero-copy" data-reveal>
+          <p class="eyebrow">临床心理科/刘盈池</p>
+          <h1 id="hero-title">非自杀性自伤的临床诊治</h1>
+          <p class="hero-lede">
+            将文档内容转换为网页式临床演示：从定义与鉴别开始，沿着风险机制、临床特征、评估工具与治疗路径逐层展开。
+          </p>
+          <div class="hero-actions" aria-label="主要操作">
+            <a class="primary-action" href="#treatment">查看治疗路径</a>
+            <a class="secondary-action" href="#assessment">评估工具</a>
+          </div>
+        </div>
+
+        <div class="orbit-stage" aria-label="NSSI 概念动态图" data-reveal>
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="orbit orbit-three"></div>
+          <div class="core-node">
+            <span>无自杀意图</span>
+            <strong>NSSI</strong>
+            <small>情绪调节 / 人际控制</small>
+          </div>
+          <span class="satellite satellite-a">反复</span>
+          <span class="satellite satellite-b">直接</span>
+          <span class="satellite satellite-c">故意</span>
+          <span class="satellite satellite-d">非文化认可</span>
+        </div>
+      </section>
+
+      <section class="summary-strip" aria-label="核心概览" data-reveal>
+        <article>
+          <span>01</span>
+          <h2>定义</h2>
+          <p>在没有自杀意图的情况下，直接、故意、反复伤害自身身体，且不被文化或亚文化认可。</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h2>高发阶段</h2>
+          <p>通常集中于青少年和成年早期，低龄青少年呈增加趋势，多数在成年早期停止或减轻。</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h2>治疗优先级</h2>
+          <p>心理治疗是一线主要手段；药物治疗通常作为二线方案，并需结合共病情况。</p>
+        </article>
+      </section>
+
+      <section id="definition" class="chapter split-section section-shell" aria-labelledby="definition-title">
+        <div class="chapter-heading" data-reveal>
+          <p class="eyebrow">01 / Definition</p>
+          <h2 id="definition-title">先把边界说清楚</h2>
+          <p>
+            NSSI 与自杀未遂并不等同。网页用对照结构把“意图、伤害量、行动频率、心理痛苦和后果”快速拆开，帮助听众建立临床判断框架。
+          </p>
+        </div>
+        <div class="comparison-panel" data-reveal>
+          <div class="comparison-head">
+            <span>NSSI</span>
+            <span>自杀未遂</span>
+          </div>
+          <div class="compare-row">
+            <strong>行为目标</strong>
+            <p>可能是从负面情绪或痛苦中获得暂时解脱。</p>
+            <p>目标更接近结束情感痛苦或生命。</p>
+          </div>
+          <div class="compare-row">
+            <strong>伤害程度</strong>
+            <p>通常表现为较表浅的身体伤害。</p>
+            <p>往往更危险，可能造成致命损害。</p>
+          </div>
+          <div class="compare-row">
+            <strong>行动频率</strong>
+            <p>常更频繁，用以尝试控制情绪。</p>
+            <p>频率结构与目的不同，需要独立风险评估。</p>
+          </div>
+          <div class="compare-row">
+            <strong>行为后感受</strong>
+            <p>行为后可能出现短暂如释重负。</p>
+            <p>自杀未遂后的感受常与此相反。</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="chapter epidemiology section-shell" aria-labelledby="epidemiology-title">
+        <div class="chapter-heading compact" data-reveal>
+          <p class="eyebrow">02 / Epidemiology</p>
+          <h2 id="epidemiology-title">流行病学特点</h2>
+        </div>
+        <div class="timeline" data-reveal>
+          <article>
+            <span>儿童期</span>
+            <h3>开始出现</h3>
+            <p>NSSI 行为通常可在儿童期开始出现。</p>
+          </article>
+          <article>
+            <span>低龄青少年</span>
+            <h3>增加趋势</h3>
+            <p>低龄青少年中呈增加趋势。</p>
+          </article>
+          <article>
+            <span>中龄青少年</span>
+            <h3>保持稳定</h3>
+            <p>这一阶段总体趋势相对稳定。</p>
+          </article>
+          <article>
+            <span>大龄青少年</span>
+            <h3>逐渐下降</h3>
+            <p>多数在成年早期停止，也有人持续终身但程度减轻。</p>
+          </article>
+        </div>
+        <div class="note-grid" data-reveal>
+          <p>女性发生率显著高于男性。</p>
+          <p>可发生于不同精神障碍中，边缘型人格障碍最多见，其次为抑郁症和双相障碍。</p>
+          <p>进食障碍、冲动控制障碍、物质使用障碍、焦虑障碍、创伤后应激障碍等也可能伴随 NSSI 行为。</p>
+        </div>
+      </section>
+
+      <section id="mechanism" class="chapter mechanism section-shell" aria-labelledby="mechanism-title">
+        <div class="sticky-copy" data-reveal>
+          <p class="eyebrow">03 / Mechanism</p>
+          <h2 id="mechanism-title">机制不是单一开关，而是一组相互放大的回路</h2>
+          <p>
+            文档强调多因素组合：心理特征、家庭环境、成长经历、社会因素、遗传因素、神经生化与神经影像等共同参与。
+          </p>
+        </div>
+        <div class="risk-map" data-reveal>
+          <article>
+            <span>触发</span>
+            <h3>重大生活事件</h3>
+            <p>负面生活事件可能触发负面情绪和冒险行为，并成为 NSSI 的重要风险因素。</p>
+          </article>
+          <article>
+            <span>中介</span>
+            <h3>反刍思维</h3>
+            <p>个体反复、被动地思考负面体验，可能加剧并延长痛苦体验。</p>
+          </article>
+          <article>
+            <span>调节</span>
+            <h3>身体形象</h3>
+            <p>身体形象会影响个体如何应对压力和负面情绪，从而影响自伤行为可能性。</p>
+          </article>
+          <article>
+            <span>环境</span>
+            <h3>家庭与社会因素</h3>
+            <p>欺凌、留守经历、学业压力、创伤经历、亲子冲突等均被列为相关因素。</p>
+          </article>
+          <article>
+            <span>行为</span>
+            <h3>消极应对与网络成瘾</h3>
+            <p>被动应对、自责、缺乏运动、问题性手机或互联网使用，可能与回避型应对有关。</p>
+          </article>
+          <article>
+            <span>睡眠</span>
+            <h3>睡眠障碍</h3>
+            <p>睡眠质量差和经常做噩梦被认为是重要因素，关系可能由情绪调节障碍介导。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="chapter clinical section-shell" aria-labelledby="clinical-title">
+        <div class="chapter-heading" data-reveal>
+          <p class="eyebrow">04 / Clinical Features</p>
+          <h2 id="clinical-title">临床特征：形式、性别差异与功能</h2>
+          <p>
+            页面用“数据刻度”来呈现文档中的常见形式比例，同时保留对性别差异、重复性和功能的重点提醒。
+          </p>
+        </div>
+        <div class="bar-stack" data-reveal>
+          <div class="bar-row" style="--value: 65.4"><span>切割</span><b>65.4%</b></div>
+          <div class="bar-row" style="--value: 53.6"><span>刺伤</span><b>53.6%</b></div>
+          <div class="bar-row" style="--value: 49.4"><span>击打</span><b>49.4%</b></div>
+          <div class="bar-row" style="--value: 45.1"><span>撞头</span><b>45.1%</b></div>
+          <div class="bar-row" style="--value: 37.1"><span>咬伤</span><b>37.1%</b></div>
+        </div>
+        <div class="clinical-callouts" data-reveal>
+          <p>女性更可能参与涉及血液的 NSSI，例如切割、刮擦；男性可能更倾向于灼烧、打、敲击等手段。</p>
+          <p>重复性自伤行为比发作性自伤更常见，多种方法自伤比单一方法更多见。</p>
+          <p>自伤的两大功能是情绪调节和人际控制，部分患者在自伤过程中可能出现松弛感甚至欣快感。</p>
+          <p>NSSI 也可能是青年期情感障碍、焦虑障碍以及边缘型人格障碍的早期表现。</p>
+        </div>
+      </section>
+
+      <section id="assessment" class="chapter assessment section-shell" aria-labelledby="assessment-title">
+        <div class="chapter-heading compact" data-reveal>
+          <p class="eyebrow">05 / Assessment</p>
+          <h2 id="assessment-title">评估工具矩阵</h2>
+          <p>文档列出的信效度得到认可的工具，适合做成网页中的快速索引。</p>
+        </div>
+        <div class="tool-grid" data-reveal>
+          <article><strong>SITBI</strong><span>自伤意念与行为访谈表</span></article>
+          <article><strong>OSI</strong><span>渥太华自我伤害问卷</span></article>
+          <article><strong>SHI</strong><span>自伤问卷</span></article>
+          <article><strong>ISAS</strong><span>自伤状态问卷</span></article>
+          <article><strong>FASM</strong><span>自伤功能评估表</span></article>
+          <article><strong>NSSI-AT</strong><span>非自杀性自伤评估工具</span></article>
+        </div>
+      </section>
+
+      <section id="treatment" class="chapter treatment section-shell" aria-labelledby="treatment-title">
+        <div class="chapter-heading" data-reveal>
+          <p class="eyebrow">06 / Treatment</p>
+          <h2 id="treatment-title">治疗路径：先安全，再系统治疗</h2>
+          <p>
+            心理治疗是青少年 NSSI 行为的主要手段；药物治疗一般作为二线方案，在共病其他精神障碍或严重自伤行为时使用。
+          </p>
+        </div>
+        <div class="treatment-path" data-reveal>
+          <article>
+            <span>Step 01</span>
+            <h3>安全承诺</h3>
+            <p>根据评估结果与来访者明确安全协议，以“不做自杀行为”为核心目标，确保生命安全，建立治疗承诺。</p>
+          </article>
+          <article>
+            <span>Step 02</span>
+            <h3>心理教育</h3>
+            <p>介绍 NSSI 的病因和治疗知识，给予希望，增强治疗动机，并配合放松训练、焦虑管理和积极求助。</p>
+          </article>
+          <article>
+            <span>Step 03</span>
+            <h3>系统心理治疗</h3>
+            <p>识别触发和维持因素，提供替代行为技能或问题解决策略；CBT 与 DBT 循证证据最充分，为一线推荐。</p>
+          </article>
+          <article>
+            <span>Step 04</span>
+            <h3>二线与补充治疗</h3>
+            <p>药物治疗需结合共病情况并合并心理治疗；rTMS 可作为抑郁症伴 NSSI 的补充选择。</p>
+          </article>
+        </div>
+        <aside class="safety-note" data-reveal>
+          <strong>专业边界提醒</strong>
+          <p>本页面用于基于现有文档的信息化展示，不替代临床评估、诊断或治疗。若存在即时伤害风险，应立即联系当地急救、危机干预资源或线下专业人员。</p>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="site-footer" data-reveal>
+      <p>非自杀性自伤的临床诊治 · Web presentation concept</p>
+      <a href="#top">返回顶部</a>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
